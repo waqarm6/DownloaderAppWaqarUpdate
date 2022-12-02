@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/background"
+    android:id="@+id/main_layout">
+
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/toolbar_corners">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/language"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_baseline_language_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="MEDIA DOWNLOADER"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/noads"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/noads" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/tool"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clipToPadding="true"
+        app:cardCornerRadius="25dp"
+        android:id="@+id/searchcard">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:id="@+id/copylinkanddownloadcard"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/copy_link_amp_click_here"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:id="@+id/copylinktext"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/link"
+                tools:ignore="ImageContrastCheck" />
+        </LinearLayout>
+
+        <!--        </LinearLayout>-->
+    </androidx.cardview.widget.CardView>
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Open app &amp; Copy link "-->
+    <!--        android:layout_below="@id/tool"-->
+    <!--        android:layout_marginLeft="5dp" />-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@id/ly"-->
+<!--        android:layout_below="@id/searchcard">-->
+
+<!--    <GridView-->
+<!--        android:id="@+id/logogrid"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/searchcard"-->
+<!--        android:layout_margin="15dp"-->
+<!--        android:horizontalSpacing="6dp"-->
+<!--        android:numColumns="3"-->
+<!--        android:verticalSpacing="6dp" />-->
+
+    <com.google.android.ads.nativetemplates.TemplateView
+        android:id="@+id/my_template"
+    app:gnt_template_type="@layout/gnt_medium_template_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_below="@id/searchcard"
+        android:layout_margin="15dp"
+
+        />
+
+<!--        <GridLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:columnCount="3"-->
+<!--            >-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_facebook"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                app:cardCornerRadius="8.0dip"-->
+<!--                app:cardElevation="6.0dip"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                >-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="48dp"-->
+<!--                        android:layout_height="48dp"-->
+
+<!--                        android:src="@drawable/fb_icon" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Facebook"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_whatsapp"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                app:cardCornerRadius="8.0dip"-->
+<!--                app:cardElevation="6.0dip"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                >-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="48dp"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:src="@drawable/whatsapp_icon" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Whatspp"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_insta"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                app:cardCornerRadius="8.0dip"-->
+<!--                app:cardElevation="6.0dip">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="48dp"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:src="@drawable/insta_icon" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Instagram"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                </LinearLayout>-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_snap"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_row="1"-->
+<!--                android:layout_rowWeight="1.0"-->
+<!--                android:layout_column="0"-->
+<!--                android:layout_columnWeight="1.0"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_margin="15.0dip"-->
+<!--                app:cardCornerRadius="8.0dip"-->
+<!--                app:cardElevation="6.0dip">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="48dp"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:src="@drawable/snapchat_icon1" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Snapchat"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_tiktok"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_row="1"-->
+<!--                android:layout_rowWeight="1.0"-->
+<!--                android:layout_column="1"-->
+<!--                android:layout_columnWeight="1.0"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_margin="15.0dip"-->
+<!--                app:cardCornerRadius="8.0dip"-->
+<!--                app:cardElevation="6.0dip">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="48dp"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:src="@drawable/tiktok_icon" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Tiktok"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_twitter"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_row="1"-->
+<!--                android:layout_rowWeight="1.0"-->
+<!--                android:layout_column="2"-->
+<!--                android:layout_columnWeight="1.0"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_margin="15.0dip"-->
+<!--                app:cardCornerRadius="8.0dip"-->
+<!--                app:cardElevation="6.0dip">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="48dp"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:src="@drawable/twitter_icon" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Twitter"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                </LinearLayout>-->
+<!--            </androidx.cardview.widget.CardView>-->
+<!--        </GridLayout>-->
+
+<!--    </ScrollView>-->
+
+    <LinearLayout
+        android:id="@+id/ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center_vertical"
+                android:src="@drawable/selector_ic_home"
+                app:tint="@color/grey_dd_main"
+                tools:ignore="ImageContrastCheck"
+                android:id="@+id/homeimage"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/apps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_dashboard_black_24dp"
+                app:tint="@color/grey_dd_main"
+                tools:ignore="ImageContrastCheck"
+                android:id="@+id/dashboardimage"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/videwGllery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/download_gallery"
+                app:tint="@color/grey_dd_main"
+                android:id="@+id/galleryimage"
+                tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/settingpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center_vertical"
+                android:src="@drawable/settings_un"
+                app:tint="@color/grey_dd_main"
+                android:id="@+id/settingimage"
+                tools:ignore="ImageContrastCheck" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

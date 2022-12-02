@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8.0dip"
+    app:cardElevation="6.0dip"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/fb_icon"
+                            android:id="@+id/logo"/>
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Facebook"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:id="@+id/logo_text"/>-->
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>

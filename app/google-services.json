@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "471336680866",
+    "project_id": "mp4-downloader-300fd",
+    "storage_bucket": "mp4-downloader-300fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471336680866:android:9f0ffd76cee814e8e8c6fb",
+        "android_client_info": {
+          "package_name": "com.abtech.mp3.mp4.videodownloader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471336680866-v499p06pr98ua48p6uoejpnrt0sosud4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBteY2T3wxy9iOy6_eIT39r1nwg-KriI0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471336680866-v499p06pr98ua48p6uoejpnrt0sosud4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
